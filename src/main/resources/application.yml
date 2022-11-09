@@ -31,11 +31,11 @@ spring:
       client:
         registration:
           google: # /oauth2/authorization/google ? ??? ???? ??.
-            client-id: ???
-            client-secret: ???
+            client-id: 50358889874-26jr701ai8nt6rdb68k2ml08relnqm7s.apps.googleusercontent.com
+            client-secret: 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
             scope:
-              - email
-              - profile
+            - email
+            - profile
 
           facebook:
             client-id: ???

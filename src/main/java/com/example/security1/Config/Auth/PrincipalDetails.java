@@ -19,14 +19,15 @@ public class PrincipalDetails implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         //user.getRole(); // return type string != Collection~~
-        Collection<GrantedAuthority> collect = new ArrayList<>();
+        Collection<GrantedAuthority> collect = new ArrayList<GrantedAuthority>();
         collect.add( new GrantedAuthority() {
             @Override
             public String getAuthority() {
+                System.out.println("user.getRole() = " + user.getRole());
                 return user.getRole();
             }
         });
-        return null;
+        return collect;
     }
 
     @Override
